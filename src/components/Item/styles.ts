@@ -21,11 +21,18 @@ export const CheckboxArea = styled.div`
       display: none;
    }
 
+   label {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      // word-break: break-all; /* uncomment this to break line based on letter */
+   }
+
    label:before {
       content: "";
       display: inline-block;
-      width: 18px;
-      height: 18px;
+      min-width: 18px;
+      min-height: 18px;
       border-radius: 4px;
       background-color: none;
       border: 2px solid #7b7b7b;
